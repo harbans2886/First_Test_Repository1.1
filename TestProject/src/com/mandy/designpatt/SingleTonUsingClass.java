@@ -7,6 +7,7 @@ public class SingleTonUsingClass implements Cloneable {
 	private SingleTonUsingClass(){}
 	
 	public static SingleTonUsingClass getInstance() {
+		System.out.println("Inside getInstance method...");
 		if (singleTonUsingClass == null) {
 			synchronized (SingleTonUsingClass.class) {
 				if (singleTonUsingClass == null) {
